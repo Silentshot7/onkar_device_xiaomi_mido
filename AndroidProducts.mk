@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/fuse_mido.mk
+    $(LOCAL_DIR)/arrow_mido.mk
 
 COMMON_LUNCH_CHOICES := \
-    fuse_mido-user \
-    fuse_mido-userdebug \
-    fuse_mido-eng
+    arrow_mido-user \
+    arrow_mido-userdebug \
+    arrow_mido-eng
