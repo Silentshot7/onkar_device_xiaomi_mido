@@ -24,6 +24,16 @@ $(call inherit-product, device/xiaomi/mido/device.mk)
 # Inherit some common Arrow OS stuff.
 $(call inherit-product, vendor/arrow/config/common.mk)
 
+# Mido bootanimation flag
+TARGET_BOOT_ANIMATION_RES := 1080
+
+WITH_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
+TARGET_SCREEN_DENSITY := 400
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := mido
 PRODUCT_NAME := arrow_mido
