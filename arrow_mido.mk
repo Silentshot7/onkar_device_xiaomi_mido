@@ -27,7 +27,7 @@ $(call inherit-product, vendor/arrow/config/common.mk)
 # Mido bootanimation flag
 TARGET_BOOT_ANIMATION_RES := 1080
 
-WITH_GAPPS := true
+ARROW_GAPPS := true
 TARGET_GAPPS_ARCH := arm64
 TARGET_SCREEN_DENSITY := 400
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
