@@ -24,6 +24,14 @@ $(call inherit-product, device/xiaomi/mido/device.mk)
 # Inherit some common VoltageOS stuff.
 $(call inherit-product, vendor/voltage/config/common_full_phone.mk)
 
+#Voltage Flags
+EXTRA_UDFPS_ANIMATIONS := true
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_FACE_UNLOCK_SUPPORTED := true
+USE_PIXEL_CHARGING := true
+TARGET_USES_BLUR := true
+TARGET_SUPPORTS_QUICK_TAP := true
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := mido
 PRODUCT_NAME := voltage_mido
@@ -36,7 +44,7 @@ BOARD_VENDOR := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="mido-user 7.0 NRD90M V9.6.1.0.NCFMIFD release-keys"
+    PRIVATE_BUILD_DESC="raven-user 12 SQ3A.220705.003 8671607 release-keys"
 
-# Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := "xiaomi/mido/mido:7.0/NRD90M/V9.6.1.0.NCFMIFD:user/release-keys"
+# Build fingerprint
+BUILD_FINGERPRINT="google/raven/raven:12/SQ3A.220705.003/8671607:user/release-keys"
